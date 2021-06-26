@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="container-top">
+    <div class="container-left">
+      <ng-lottie
+        width="49vw"
+        height="70vh"
+        [options]="{ path: 'assets/welcome.json', loop: false }"
+        (complete)="complete($event)"
+      ></ng-lottie>
+    </div>
+    <div class="container-right">
+      <ng-lottie
+        width="49vw"
+        height="70vh"
+        [options]="{ path: 'assets/people.json', loop: false }"
+      ></ng-lottie>
+    </div>
+  </div>
+  <div class="container-bottom">
+    <ng-lottie
+      class="scrollBtn"
+      width="19vw"
+      height="20vh"
+      [options]="{ path: 'assets/scroll.json', loop: true, autoplay: false }"
+      (animationCreated)="animationCreated($event)"
+    ></ng-lottie>
+  </div>
+</div>

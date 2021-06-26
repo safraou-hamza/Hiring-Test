@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  height: 80vh;
+}
+
+.container-left {
+  transform: translate(2.5vw, 15vh);
+}
+
+.container-right {
+  transform: translateX(-2.5vw);
+}
+
+.container-bottom {
+  height: 20vh;
+  align-self: center;
+}
+
+.scrollBtn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.scrollBtn::before {
+  content: "";
+  width: 7vw;
+  margin-right: -6vw;
+  z-index: 3;
+  cursor: default;
+}
+
+.scrollBtn::after {
+  content: "";
+  width: 7vw;
+  margin-left: -6vw;
+  z-index: 3;
+  cursor: default;
+}

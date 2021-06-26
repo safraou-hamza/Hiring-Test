@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+}
+
+table {
+  width: 100%;
+  background-color: transparent;
+}
+
+.mat-form-field {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  padding-left: 1vw;
+  align-self: center;
+}
+
+.paginator {
+  background-color: transparent;
+  width: 96vw;
+}
+
+td,
+th {
+  width: 25%;
+  font-size: 18px;
+  font-weight: 500;
+}
