@@ -8,6 +8,6 @@
 
 #### Start by `npm install` to install my applications dependencies.
 
-#### Then don't mind Running `ng serve --open`.
+#### Then le the show begins `ng serve --open`.
 
 ## I hope you will like my work 🤲🏻😄
