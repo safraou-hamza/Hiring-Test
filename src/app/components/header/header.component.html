@@ -18,11 +18,12 @@
   </div>
   <div class="container-bottom">
     <ng-lottie
-      class="scrollBtn"
+      id="scrollBtn"
       width="19vw"
       height="20vh"
       [options]="{ path: 'assets/scroll.json', loop: true, autoplay: false }"
       (animationCreated)="animationCreated($event)"
+      (click)="scroll($event)"
     ></ng-lottie>
   </div>
 </div>

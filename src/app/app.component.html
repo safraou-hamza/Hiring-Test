@@ -1,2 +1,9 @@
-<app-header></app-header>
-<app-body></app-body>
+<!-- the app-header contains the welcome page -->
+<app-header
+  data-scroll-section
+  id="app-header"
+  (animationClick)="letScroll($event)"
+></app-header>
+
+<!-- the app-body conatins the table asked in the test -->
+<app-body data-scroll-section id="app-body"></app-body>

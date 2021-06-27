@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~9.1.12",
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
+    "locomotive-scroll": "^4.1.1",
     "lottie-web": "^5.7.11",
     "ngx-lottie": "^7.0.1",
     "rxjs": "~6.5.4",

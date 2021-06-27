@@ -6,4 +6,8 @@
 
 ## Development server
 
-Don't mind Running `ng serve --open`.
+#### Start by `npm install` to install my applications dependencies.
+
+#### Then don't mind Running `ng serve --open`.
+
+## I hope you will like my work 🤲🏻😄

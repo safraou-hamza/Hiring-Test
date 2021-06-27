@@ -31,12 +31,15 @@ $here-we-go-theme: mat-light-theme(
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
+// changed the box-sizing to border-box so if we set width = 100px the rendred width is 100px.
+// And changed the default margin and padding of every element to 0.
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+// changed the font-family, scaled the height and changed the background-color to match our animations color palette.
 body {
   font-family: "Poppins", sans-serif;
   height: 100%;
@@ -47,18 +50,35 @@ body {
   );
 }
 
+// we scaled the html to take the full height of the viewport.
 html {
   height: 100%;
 }
 
+// changed the paginatior icon width.
 .mat-paginator-icon {
   width: 2vw !important;
-  color: #fbc62c;
 }
 
+// here we changed the mat-form-field appearance
 .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
   color: black !important;
   Input {
     color: black !important;
   }
+}
+
+// here we redefined the scrollbar
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f5a5a9; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffad4d; /* color of the scroll thumb */
+  border-radius: 5px; /* roundness of the scroll thumb */
+  border: 3px solid transparent; /* creates padding around scroll thumb */
 }

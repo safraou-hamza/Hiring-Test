@@ -26,3 +26,12 @@ th {
   font-size: 18px;
   font-weight: 500;
 }
+
+.error {
+  position: absolute;
+  left: 50%;
+  top: 200%;
+  transform: translate(-50%, -150%);
+  width: 40%;
+  height: 50%;
+}
