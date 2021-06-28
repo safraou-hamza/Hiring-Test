@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="container">
   <mat-form-field appearance="outline">
     <input matInput (keyup)="applyFilter($event)" placeholder="search" #input />
   </mat-form-field>
@@ -37,13 +37,44 @@
 
     <mat-paginator class="paginator" pageSize="10"></mat-paginator>
   </div>
-  <!--  this is empty message -->
-  <div class="error">
-    <ng-lottie
-      *ngIf="empty"
-      width="49vw"
-      height="70vh"
-      [options]="{ path: 'assets/empty.json', loop: true }"
-    ></ng-lottie>
-  </div>
+</div>
+<!--  this is our table controle messages -->
+<div class="tableState" *ngIf="loading || empty">
+  <ng-lottie
+    class="loader"
+    id="loader"
+    *ngIf="loading"
+    width="49vw"
+    height="100vh"
+    [options]="{ path: 'assets/humans.json', loop: false }"
+    (complete)="loaderDone($event)"
+  ></ng-lottie>
+  <ng-lottie
+    *ngIf="empty"
+    width="49vw"
+    height="100vh"
+    [options]="{ path: 'assets/empty.json', loop: true }"
+  ></ng-lottie>
+</div>
+<div class="error" *ngIf="error">
+  <ng-lottie
+    width="49vw"
+    height="60vh"
+    [options]="{ path: 'assets/error.json', loop: false }"
+  ></ng-lottie>
+  <h1 class="error-message">
+    The server rejected our request because of a limit requests policy
+  </h1>
+  <button class="error-btn" mat-flat-button (click)="fetchData('retry')">
+    {{ retry }}
+  </button>
+  <ng-lottie
+    class="error-message"
+    id="failure"
+    width="49vw"
+    height="20vh"
+    [options]="{ path: 'assets/failure.json', loop: false, autoplay: false }"
+    (animationCreated)="failureCreated($event)"
+    (complete)="failureDone($event)"
+  ></ng-lottie>
 </div>

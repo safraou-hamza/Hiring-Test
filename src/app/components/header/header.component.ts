@@ -21,12 +21,12 @@ export class HeaderComponent implements OnInit {
 
   constructor(private ngZone: NgZone) {}
 
+  ngOnInit(): void {}
+
   // once the animation is created we can select it.
   animationCreated(animationItem: AnimationItem): void {
     this.animationItem = animationItem;
   }
-
-  ngOnInit(): void {}
 
   // this methode gets fired once the lottie welcome animation is done.
   complete(welcomeAnimation: AnimationItem): void {

@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
+import { MatButtonModule } from '@angular/material/button';
 
 // * this function is related to the lottie animation used in the home page.
 export function playerFactory() {
@@ -27,6 +28,7 @@ const matComponents = [
   MatPaginatorModule,
   MatInputModule,
   MatSortModule,
+  MatButtonModule,
 ];
 
 @NgModule({

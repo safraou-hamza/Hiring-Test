@@ -15,6 +15,11 @@ export class AppComponent {
   ngOnInit(): void {
     // selecting our body component by it's ID
     this.target = document.querySelector('#app-body');
+    // adding scroll smoothness to our app
+    new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+    });
   }
 
   // after getting the callback from the lottie scroll animation we perform a scroll to our body
